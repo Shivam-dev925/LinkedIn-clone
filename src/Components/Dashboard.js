@@ -1,9 +1,16 @@
 import Text from "../Components/Title";
 import { Avator, Box } from "../Styledcomponents/styledComponents";
+import Avatar from "./Avatar";
 import "./DashBoard.css";
 function Dashboard() {
   return (
-    <Box direction="column" height="80vh" flex="0.25" border="1px solid red">
+    <Box
+      position="sticky"
+      top="0px"
+      direction="column"
+      height="80vh"
+      flex="0.25"
+    >
       <div
         style={{
           background: "white",
@@ -16,13 +23,7 @@ function Dashboard() {
         }}
       >
         <div className="Dashboard__top"></div>
-        <Avator width="90px" height="90px">
-          <img
-            className="avator__image"
-            src="images/self.jpg"
-            alt="not found"
-          />
-        </Avator>
+        <Avatar width="90px" height="90px" />
         <Text className="userName">shivam choudhary</Text>
         <p>chshivam815@gmail.com</p>
         <br /> <br />
@@ -37,17 +38,29 @@ function Dashboard() {
         <div className="Dashboard__bottom">
           <h4 className="header">Recents</h4>
 
-          <p  style={{width:"90%"}}>
-            <strong style={{ marginRight: "1rem" ,color:"darkgrey"}}>#</strong> recent 1{" "}
+          <p style={{ width: "90%" }}>
+            <strong style={{ marginRight: "1rem", color: "darkgrey" }}>
+              #
+            </strong>{" "}
+            recent 1{" "}
           </p>
-          <p style={{width:"90%"}} >
-            <strong style={{ marginRight: "1rem",color:"darkgrey" }}>#</strong> recent 2{" "}
+          <p style={{ width: "90%" }}>
+            <strong style={{ marginRight: "1rem", color: "darkgrey" }}>
+              #
+            </strong>{" "}
+            recent 2{" "}
           </p>
-          <p  style={{width:"90%"}}>
-            <strong style={{ marginRight: "1rem",color:"darkgrey" }}>#</strong> recent 3{" "}
+          <p style={{ width: "90%" }}>
+            <strong style={{ marginRight: "1rem", color: "darkgrey" }}>
+              #
+            </strong>{" "}
+            recent 3{" "}
           </p>
-          <p  style={{width:"90%"}}>
-            <strong style={{ marginRight: "1rem",color:"darkgrey" }}>#</strong> recent 4{" "}
+          <p style={{ width: "90%" }}>
+            <strong style={{ marginRight: "1rem", color: "darkgrey" }}>
+              #
+            </strong>{" "}
+            recent 4{" "}
           </p>
         </div>
       </div>

@@ -1,0 +1,16 @@
+.Uploaders__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+.uploaderlist {
+  flex-direction: row;
+   font-weight: 500;
+  padding: 1rem 1rem;
+  border-radius: 0.4rem;
+}
+.uploaderlist:hover {
+  background-color: #dfebf5;
+  cursor: pointer;
+}

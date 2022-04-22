@@ -1,7 +1,8 @@
-import { Nav, Avator } from "../Styledcomponents/styledComponents";
+import { Nav } from "../Styledcomponents/styledComponents";
 import "./AppHeader.css";
 import SearchIcon from "@mui/icons-material/Search";
-import Navigators from "./Navigators";
+import Navigators from "./Individual Lists";
+import Avatar from "./Avatar";
 
 function AppHeader() {
   return (
@@ -14,9 +15,7 @@ function AppHeader() {
       <div className="Navigator__Wrappers">
         <Navigators />
       </div>
-      <Avator>
-        <img className="avator__image" src="images/self.jpg" alt="not found" />
-      </Avator>
+      <Avatar />
     </Nav>
   );
 }

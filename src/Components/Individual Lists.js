@@ -43,4 +43,52 @@ function Navigators() {
   );
 }
 
+export const Uploaders = () => {
+  const UploadersData = [
+    {
+      title: "Photo",
+      icon: HomeIcon,
+      color: "skyblue",
+    },
+
+    {
+      title: "Video",
+      icon: PeopleIcon,
+      color: "green",
+    },
+    {
+      title: "Event",
+      icon: WorkIcon,
+      color: "orange",
+    },
+    {
+      title: "Write article",
+      icon: ChatBubbleIcon,
+      color: "lightPink",
+    },
+  ];
+
+  return (
+    <>
+      {UploadersData?.map((uploader, idx) => {
+        return (
+          <li
+            draggable
+            className="uploaderlist"
+            style={{ flexDirection: "row" }}
+            key={idx}
+          >
+            <uploader.icon
+              style={{
+                color: uploader.color,
+              }}
+            />
+            {uploader.title}
+          </li>
+        );
+      })}
+    </>
+  );
+};
+
 export default Navigators;
