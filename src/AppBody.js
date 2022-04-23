@@ -5,7 +5,7 @@ import Feed from "./Components/Feed";
 import News from "./Components/News";
 function AppBody() {
   return (
-    <Box className="AppBody" justify="space-evenly" border="1px solid blue">
+    <Box className="AppBody" justify="space-evenly">
       <Dashboard />
       <Feed />
       <News />

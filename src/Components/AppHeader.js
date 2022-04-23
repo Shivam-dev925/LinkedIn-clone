@@ -1,7 +1,7 @@
 import { Nav } from "../Styledcomponents/styledComponents";
 import "./AppHeader.css";
 import SearchIcon from "@mui/icons-material/Search";
-import Navigators from "./Individual Lists";
+import Navigators from "../Individual Components/Individual Lists";
 import Avatar from "./Avatar";
 
 function AppHeader() {

@@ -16,6 +16,14 @@ export const GlobalStyleLayer = createGlobalStyle`
     Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif; 
       }
 
+li,ul{
+  list-style-type:none ;
+  
+}
+a{
+  text-decoration:none ;
+  cursor:poiner ;
+}
 
 
 `;

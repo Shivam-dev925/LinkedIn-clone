@@ -31,6 +31,17 @@ export const Flex = styled.div`
     height: ${({ height }) => height && height};
     border-radius: 0.6rem;
     background-color: white;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -2rem;
+      left: 25px;
+      height: 0.06rem;
+      background: grey;
+      width: 90%;
+    }
   }
   &.Feed__inputwrapper {
     border: 1px solid grey;
@@ -38,7 +49,7 @@ export const Flex = styled.div`
     flex: 0.8;
     height: 80%;
     transition: all 0.1s linear;
-    > input {
+    > form > input {
       border: none;
       outline: none;
       background: transparent;
@@ -63,8 +74,18 @@ export const Box = styled(Flex)`
   bottom: ${({ bottom }) => bottom && bottom};
   border: ${({ border }) => border && border};
   background: ${({ background }) => background && background};
+  border-radius: ${({ radius }) => radius && radius};
+  &.Posts {
+    background-color: white;
+    margin-top: 3rem;
+  }
+  &.noPosts {
+    margin-top: 3rem;
+    height: 200px;
+    background: white;
+  }
   &.Feed {
-    padding: 1rem 0.4rem;
+    padding: 3.3rem 0.4rem 0px 0.4rem;
   }
   &.AppBody {
     padding: 2rem 4rem;

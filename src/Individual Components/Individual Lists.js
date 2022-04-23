@@ -1,4 +1,3 @@
-import React from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PeopleIcon from "@mui/icons-material/People";
 import WorkIcon from "@mui/icons-material/Work";
@@ -43,26 +42,26 @@ function Navigators() {
   );
 }
 
-export const Uploaders = () => {
+export const Uploaders = (props) => {
   const UploadersData = [
     {
-      title: "Photo",
-      icon: HomeIcon,
+      title: props.title1 ? props.title1 : "Photo",
+      icon: props.icon1 ? props.icon1 : HomeIcon,
       color: "skyblue",
     },
 
     {
-      title: "Video",
-      icon: PeopleIcon,
+      title: props.title2 ? props.title2 : "Video",
+      icon: props.icon2 ? props.icon2 : PeopleIcon,
       color: "green",
     },
     {
-      title: "Event",
-      icon: WorkIcon,
+      title: props.title3 ? props.title3 : "Event",
+      icon: props.icon3 ? props.icon3 : WorkIcon,
       color: "orange",
     },
     {
-      title: "Write article",
+      title: props.title4 ? props.title4 : "Write article",
       icon: ChatBubbleIcon,
       color: "lightPink",
     },
